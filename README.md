@@ -48,7 +48,27 @@ For Windows:
 mvnw.cmd clean package -DskipTests
 ```
 
-### 3. Local Deployment with Kind
+### 3. Running with Docker Compose
+The easiest way to run the application locally is using Docker Compose:
+
+```bash
+# Start the services
+docker compose up -d
+
+# Check the logs
+docker compose logs -f
+
+# Stop the services
+docker compose down
+```
+
+The application will be available at:
+```
+http://localhost:8020
+```
+
+
+### 4. Local Deployment with Kind
 
 The project includes a comprehensive script for local deployment. Run:
 
