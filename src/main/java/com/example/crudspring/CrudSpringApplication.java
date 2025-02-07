@@ -10,21 +10,19 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class CrudSpringApplication implements CommandLineRunner {
 
-    @Autowired
-    private EmployeeService employeeService;
+  @Autowired private EmployeeService employeeService;
 
-    public static void main(String[] args) {
-        SpringApplication.run(CrudSpringApplication.class, args);
-    }
+  public static void main(String[] args) {
+    SpringApplication.run(CrudSpringApplication.class, args);
+  }
 
-    @Override
-    public void run(String... args) throws Exception {
+  @Override
+  public void run(String... args) throws Exception {
 
-        Employee employee = new Employee(1L, "kemane", "Donfack","kemanedonfack5@gmail.com");
-        Employee employee1 = new Employee(2L, "ivan", "Nafack","nafack@gmail.com");
+    Employee employee = new Employee(1L, "kemane", "Donfack", "kemanedonfack5@gmail.com");
+    Employee employee1 = new Employee(2L, "ivan", "Nafack", "nafack@gmail.com");
 
-        employeeService.createEmployee(employee);
-        employeeService.createEmployee(employee1);
-    }
-
+    employeeService.createEmployee(employee);
+    employeeService.createEmployee(employee1);
+  }
 }
