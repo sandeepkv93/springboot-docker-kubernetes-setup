@@ -19,8 +19,8 @@ public class CrudSpringApplication implements CommandLineRunner {
   @Override
   public void run(String... args) throws Exception {
 
-    Employee employee = new Employee(1L, "kemane", "Donfack", "kemanedonfack5@gmail.com");
-    Employee employee1 = new Employee(2L, "ivan", "Nafack", "nafack@gmail.com");
+    Employee employee = new Employee(1L, "Sandeep", "Vishu", "sandeep@gmail.com");
+    Employee employee1 = new Employee(2L, "Jon", "Doe", "jon@gmail.com");
 
     employeeService.createEmployee(employee);
     employeeService.createEmployee(employee1);
